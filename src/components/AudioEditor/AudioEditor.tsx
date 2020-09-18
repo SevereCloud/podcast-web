@@ -177,10 +177,12 @@ const AudioEditor: FunctionComponent<IAudioEditorProps> = ({ podcast }: IAudioEd
           setEditStory([...editStory, currentBuffer]);
           setCurrentBuffer(sllicedBuffer);
           // load buffer to wavesurfer
+          wavesurfer.stop();
           wavesurfer.backend.load(sllicedBuffer);
           wavesurfer.drawBuffer();
           wavesurfer.isReady = true;
           wavesurfer.fireEvent('ready');
+          wavesurfer.clearRegions();
         },
       );
     }
@@ -193,6 +195,13 @@ const AudioEditor: FunctionComponent<IAudioEditorProps> = ({ podcast }: IAudioEd
       wavesurfer.drawBuffer();
       wavesurfer.isReady = true;
       wavesurfer.fireEvent('ready');
+
+      if (selectionRegion) {
+        selectionRegion.remove();
+        setSelectionRegion(null);
+        setIsEditable(false);
+      }
+      wavesurfer.clearRegions();
       // new story
       setEditStory([...editStory.slice(0, editStory.length - 1)])
 
