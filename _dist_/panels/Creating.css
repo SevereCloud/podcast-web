@@ -1,0 +1,43 @@
+.FormLayoutRow > .FormLayout__container {
+  display: flex;
+  padding: 0;
+}
+
+.FormLayoutRow > .FormLayout__container > .FormLayout__row {
+  padding-left: 12px;
+}
+
+.FormLayoutRow > .FormLayout__container > .FormLayout__row:first-child {
+  padding-left: 0;
+}
+
+.FormLayoutRow > .FormLayout__container > .FormLayout__row:last-child {
+  flex-grow: 1;
+}
+
+.PodcastIcon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border: none;
+  background-color: var(--field_background);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  outline: none;
+  margin-right: 10px;
+}
+
+.PodcastIcon .Icon {
+  color: var(--icon_secondary);
+}
+
+.SimpleCell--ios .PodcastIcon {
+  border-radius: 10px;
+}
+
+.LoadFile {
+  display: none;
+}

@@ -1,0 +1,119 @@
+.PodcastSnippet {
+  background-color: #2c2d2e;
+  border-radius: 6px;
+  display: flex;
+  overflow: hidden;
+}
+
+.PodcastSnippet__cover {
+  width: 120px;
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+}
+
+.PodcastSnippet .PodcastSnippet__info {
+  flex-grow: 1;
+  position: relative;
+}
+
+.PodcastSnippet__info .Button,
+.PodcastSnippet__info .Icon--play_circle_24 {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+}
+
+.PodcastSnippet__favorite {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #4c4f54;
+}
+
+.PodcastSnippet--ios .PodcastSnippet__favorite {
+  color: #9aa1ac;
+}
+
+.PodcastSnippet--android .PodcastSnippet__name {
+  font-family: var(--font-common);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+
+  /* or 129% */
+
+  letter-spacing: 0.02px;
+  color: #fff;
+  margin: 12px 40px 4px 12px;
+}
+
+.PodcastSnippet--ios .PodcastSnippet__name {
+  font-family: var(--font-common);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+
+  /* or 129% */
+
+  letter-spacing: -0.154px;
+  color: #fff;
+  margin: 10px 40px 4px 12px;
+}
+
+.PodcastSnippet--android .PodcastSnippet__sub {
+  font-family: var(--font-common);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+
+  /* identical to box height, or 123% */
+
+  letter-spacing: 0.01px;
+  color: #909498;
+  margin: 0 40px 10px 12px;
+}
+
+.PodcastSnippet--ios .PodcastSnippet__sub {
+  font-family: var(--font-common);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+
+  /* identical to box height, or 117% */
+
+  color: #909498;
+  margin: 0 40px 10px 12px;
+}
+
+.PodcastSnippet__info .Progress {
+  position: absolute;
+  right: 67px;
+  bottom: 23px;
+  left: 48px;
+  background: #fff;
+  background: #5c5d5f;
+  border-radius: 1px;
+  height: 2px;
+}
+
+.PodcastSnippet__duration {
+  position: absolute;
+  right: 12px;
+  bottom: 17px;
+
+  /* SF Caption 2 Regular */
+  font-family: var(--font-common);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+
+  /* identical to box height, or 117% */
+
+  color: #909498;
+}

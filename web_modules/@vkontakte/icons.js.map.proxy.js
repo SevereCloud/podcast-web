@@ -1,0 +1,1 @@
+export default "/web_modules/@vkontakte/icons.js.map";

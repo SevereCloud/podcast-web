@@ -1,0 +1,27 @@
+.timeline-border {
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.wavesurfer-region {
+    border-top: 1px solid var(--accent)!important;
+    border-bottom: 1px solid var(--accent)!important;
+    height: calc(100% - 2px)!important;
+    background-color: transparent!important;
+}
+
+.wavesurfer-handle {
+    border-top: 30px solid var(--accent)!important;
+    border-bottom: 30px solid var(--accent)!important;
+    height: calc(100% - 60px)!important;
+    border-left: 4px solid var(--accent)!important;
+    border-right: 4px solid var(--accent)!important;
+    width: 3px!important;
+    min-width: 2px!important;
+    max-width: 2px!important;
+    background-color: white!important;
+}

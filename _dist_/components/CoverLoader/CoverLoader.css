@@ -1,0 +1,60 @@
+.CoverLoader {
+  position: relative;
+  width: 72px;
+  height: 72px;
+  border: 1px solid var(--field_border);
+  background-color: var(--field_background);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  margin: 0 auto;
+  padding: 0;
+  cursor: default;
+  color: var(--accent);
+  overflow: hidden;
+}
+
+.CoverLoader__background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.CoverLoader.Tappable--active {
+  opacity: 0.4;
+}
+
+.CoverLoader--android {
+  border-radius: 8px;
+}
+
+.CoverLoader--ios {
+  border-radius: 10px;
+}
+
+.CoverLoader--load {
+  border: none;
+}
+
+.CoverLoader__input {
+  display: none;
+}
+
+.CoverLoader__in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.CoverLoader--load .CoverLoader__in {
+  display: none;
+}

@@ -1,0 +1,17 @@
+.TimeCodeEditorInput {
+  display: flex;
+}
+
+.TimeCodeEditorInput > .Input:first-child {
+  flex-grow: 1;
+}
+
+.TimeCodeEditorInput > .Input:last-child {
+  margin-left: 16px;
+  margin-right: 6px;
+  width: 76px;
+}
+
+.Cell__remove-marker {
+  min-width: 21px;
+}
