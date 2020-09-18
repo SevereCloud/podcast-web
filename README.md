@@ -1,6 +1,5 @@
 # Подкасты
 
-- [Web](https://severecloud.github.io/podcast-web)
 - [VK Mini App](https://vk.com/app7599677)
 
 ```sh
